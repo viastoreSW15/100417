@@ -7,23 +7,26 @@
 			</ObjectHeader>
 			<IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding">
 				<items>
-					<IconTabFilter id="iconTabBarFilter1" icon="sap-icon://hint" tooltip="{i18n>detailIconTabBarInfo}">
+					<IconTabFilter text="Aktivitäten" icon="sap-icon://task" iconColor="Critical" id="__filter1"/>
+					<IconTabFilter id="iconTabBarFilter1" icon="sap-icon://hint" tooltip="{i18n>detailIconTabBarInfo}" text="Pulswerte">
 					</IconTabFilter>
-					<IconTabFilter id="iconTabBarFilter2" icon="sap-icon://attachment" tooltip="{i18n>detailIconTabBarAttachments}">
+					<IconTabFilter id="iconTabBarFilter2" icon="sap-icon://step" tooltip="{i18n>detailIconTabBarAttachments}" text="Schritte">
 					</IconTabFilter>
+					<IconTabFilter text="Strecke" icon="sap-icon://area-chart" iconColor="Critical" id="__filter0"/>
 				</items>
 			</IconTabBar>
 			<Table id="lineItemsList" width="auto" items="{Products}" updateFinished="onListUpdateFinished" noDataText="{i18n>detailLineItemTableNoDataText}" busyIndicatorDelay="{detailView>/lineItemTableDelay}" class="sapUiResponsiveMargin">
 				<headerToolbar>
 					<Toolbar id="lineItemsToolbar">
-						<Title id="lineItemsHeader" text="{detailView>/lineItemListTitle}" visible="false"/>
+						<Title id="lineItemsHeader" text="{detailView>/lineItemListTitle}"/>
+					<content/>
 					</Toolbar>
 				</headerToolbar>
 				<columns>
 					<Column>
-						<Text text="{i18n>detailLineItemTableIDColumn}" visible="false"/>
+						<Text text="{i18n>detailLineItemTableIDColumn}"/>
 					</Column>
-					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right" visible="false">
+					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
 						<Text text="{i18n>detailLineItemTableUnitNumberColumn}"/>
 					</Column>
 				</columns>
@@ -31,7 +34,7 @@
 					<ColumnListItem>
 						<cells>
 							<ObjectIdentifier title="{ProductName}" text="{ProductID}"/>
-							<ObjectNumber number="{          path: 'UnitPrice',          formatter: '.formatter.currencyValue'         }" unit="{UnitsOnOrder}" visible="false"/>
+							<ObjectNumber number="{          path: 'UnitPrice',          formatter: '.formatter.currencyValue'         }" unit="{UnitsOnOrder}"/>
 						</cells>
 					</ColumnListItem>
 				</items>
