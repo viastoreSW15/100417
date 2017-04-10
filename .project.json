@@ -15,9 +15,6 @@
     "buildRequired": true
   },
   "dataBinding": {
-    "/webapp/view/App.view.xml": {
-      "entitySet": "UNBINDKEY"
-    },
     "/webapp/view/NotFound.view.xml": {
       "entitySet": "UNBINDKEY"
     },
@@ -49,8 +46,8 @@
     "resourceModelName": "i18n"
   },
   "mockpreview": {
-    "mockUri": "/odataexample/V2/Northwind/Northwind.svc",
-    "metadataFilePath": "",
+    "mockUri": "/odataexample/V2/Northwind/Northwind.svc/",
+    "metadataFilePath": "localService/metadata.xml",
     "loadJSONFiles": false,
     "loadCustomRequests": false,
     "mockRequestsFilePath": ""

@@ -1,6 +1,6 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:semantic="sap.m.semantic" controllerName="asug.controller.Master">
 
-	<semantic:MasterPage id="page" title="{masterView>/title}" navButtonPress="onNavBack" showNavButton="true">
+	<semantic:MasterPage id="page" title="{masterView>/title}" navButtonPress="onNavBack" showNavButton="true" showFooter="false">
 		<semantic:subHeader>
 			<Bar id="headerBar">
 				<contentMiddle>
@@ -21,6 +21,9 @@
 				</infoToolbar>
 				<items>
 					<ObjectListItem type="{= ${device>/system/phone} ? 'Active' : 'Inactive'}" press="onSelectionChange" title="{CategoryName}" number="{         path: 'CategoryID',         formatter: '.formatter.currencyValue'        }" numberUnit="{Description}" intro="Pulsmessung">
+					<attributes>
+					    <ObjectAttribute text="Soll der Bereich hier bleiben ?" id="__attribute8"/>
+					</attributes>
 					</ObjectListItem>
 				</items>
 			</List>
