@@ -3,7 +3,7 @@
 	<semantic:DetailPage id="page" navButtonPress="onNavBack" showNavButton="{device>/system/phone}" title="Unsere App" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
 
 		<semantic:content>
-			<Image width="140px" height="140px" id="__image0" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg"/>
+			<Image width="100px" height="100px" id="__image0" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg" backgroundPosition="" backgroundSize="center"/>
 			<ObjectHeader id="objectHeader" title="{CategoryName}" number="{         path: 'CategoryID',         formatter: '.formatter.currencyValue'      }" numberUnit="{Description}" intro="Datum: 18. Jul, 18:04 {Current Date}">
 			</ObjectHeader>
 			<IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding">
@@ -74,6 +74,76 @@
 					    </content>
 					</IconTabFilter>
 					<IconTabFilter id="iconTabBarFilter1" icon="sap-icon://hint" tooltip="{i18n>detailIconTabBarInfo}" text="Pulswerte">
+					<content>
+					    <Table noDataText="Drop column list items here and columns in the area above" id="__table1">
+					        <items>
+					            <ColumnListItem id="__item0">
+					                <cells>
+					                    <Text text="102" id="__text9"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="96 " id="__text9_copy"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="106" id="__text9_copy2"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="96 " id="__text9_copy3"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="91 " id="__text9_copy4"/></cells>
+					            </ColumnListItem>
+					            <ColumnListItem id="__item1">
+					                <cells>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="125" id="__text9_copy5"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="114" id="__text9_copy6"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="102" id="__text9_copy7"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="113" id="__text9_copy8"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="132" id="__text9_copy9"/></cells>
+					            </ColumnListItem>
+					            <ColumnListItem id="__item2">
+					                <cells>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="125" id="__text9_copy10"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="114" id="__text9_copy11"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="92 " id="__text9_copy12"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="113" id="__text9_copy13"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="94 " id="__text9_copy14"/></cells>
+					            </ColumnListItem>
+					            <ColumnListItem id="__item3">
+					                <cells>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="125" id="__text9_copy15"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="114" id="__text9_copy16"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="102" id="__text9_copy17"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="96 " id="__text9_copy18"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="93 " id="__text9_copy19"/></cells>
+					            </ColumnListItem>
+					            <ColumnListItem id="__item4">
+					                <cells>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="125" id="__text9_copy20"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="114" id="__text9_copy21"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="136" id="__text9_copy22"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="113" id="__text9_copy23"/>
+					                    <Text xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns="sap.m" text="132" id="__text9_copy24"/></cells>
+					            </ColumnListItem></items>
+					        <columns>
+					            <Column id="__column0">
+					                <header>
+					                    <Label text="Montag" id="__label5"/>
+					                </header>
+					            </Column>
+					            <Column id="__column1">
+					                <header>
+					                    <Label text="Dienstag" id="__label6"/>
+					                </header>
+					            </Column>
+					            <Column id="__column7">
+					                <header>
+					                    <Label text="Mittwoch" id="__label7"/>
+					                </header>
+					            </Column>
+					             <Column id="__column8">
+					                <header>
+					                    <Label text="Donnerstag" id="__label8"/>
+					                </header>
+					            </Column>
+					            <Column id="__column9">
+					                <header>
+					                    <Label text="Freitag" id="__label9"/>
+					                </header>
+					            </Column></columns></Table>
+					</content>
 					</IconTabFilter>
 					<IconTabFilter id="iconTabBarFilter2" icon="sap-icon://step" tooltip="{i18n>detailIconTabBarAttachments}" text="Schritte">
 					</IconTabFilter>
